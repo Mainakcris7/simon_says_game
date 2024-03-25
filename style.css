@@ -1,0 +1,87 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+    margin-top: 3rem;
+}
+h1, h2{
+    text-align: center;
+}
+p#tutorial{
+    text-align: center;
+}
+p#tutorial a{
+    color: rgb(2, 13, 110);
+    font-weight: bold;
+}
+p#tutorial a:hover{
+    text-decoration: none;
+}
+p#tutorial span{
+    font-style: italic;
+}
+div.boxes{
+    display: grid;
+    grid-template-columns: repeat(2, min(8rem, 40vw));
+    grid-template-rows: repeat(2, min(8rem, 40vw));
+    gap: 1rem;
+    width: fit-content;
+    margin:4rem auto;
+}
+div.box{
+    outline: 5px solid rgb(7, 7, 7);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+div.box:hover{
+    opacity: 0.8;
+}
+div.box:nth-child(1){
+    background-color: rgb(3, 194, 3);
+}
+div.box:nth-child(2){
+    background-color: rgb(243, 2, 2);
+}
+div.box:nth-child(3){
+    background-color: rgb(247, 243, 6);
+}
+div.box:nth-child(4){
+    background-color: rgb(3, 59, 241);
+}
+button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 0.3rem;
+    padding-bottom: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(0, 115, 255);
+    transition: all 200ms ease-in-out;
+}
+button span{
+    position: absolute;
+    right: 9px;
+    top: 4.2px;
+    transition: all 200ms ease-in-out;
+}
+button:hover{
+    background-color: rgb(43, 136, 250);
+}
+button#start:hover span{
+    transform: translateX(2px);
+}
+button#restart{
+    padding-right: 2.2rem;
+    display: none;
+}
+button#restart:hover span{
+    transform: rotate(-20deg);
+}
